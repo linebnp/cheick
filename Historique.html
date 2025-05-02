@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historique du Compte - BNP-Paribas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container history-page">
+
+        <!-- En-tête de la page Historique -->
+        <header class="history-header">
+<img src="logo-bnp.png" alt="Logo BNP Paribas" class="history-logo">
+            <!-- Optionnel: Logo peut être placé ici ou dans account-header si désiré -->
+            <h1>Historique des transactions</h1>
+            <a href="compte.html" class="back-link">Retour au Compte</a>
+        </header>
+
+        <!-- Informations du compte (copiées et adaptées de compte.html) -->
+        <div class="account-header history-account-info"> <!-- Classe ajoutée pour style spécifique si besoin -->
+
+            <!-- Colonne du milieu/gauche (informations bancaires) -->
+            <div class="bank-details">
+                <h3>Vos informations bancaires</h3>
+                <ul>
+                    <li><strong>Code banque:</strong> 16527</li>
+                    <li><strong>Code guichet:</strong> 1989</li>
+                    <li><strong>N° du compte:</strong> 00028816210</li>
+                    <li><strong>Clé RIB:</strong> 24</li>
+                    <li><strong>BIC / SWIFT:</strong> SMOEFRP1</li>
+                </ul>
+            </div>
+
+            <!-- Colonne de droite (statut et nom) -->
+            <div class="user-status">
+                <p class="status active">Compte Actif</p>
+                <p class="user-name">Line Gustavot</p>
+                <p class="user-rib">FR76 1652 8000 1610 0028 8162 1024</p>
+            </div>
+
+        </div>
+
+        <!-- Tableau de l'historique -->
+        <table class="history-table">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Montant</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- 50 lignes d'historique avec descriptions génériques -->
+                <tr><td>28/01/2025</td><td>Virement entrant - Salaire</td><td class="amount positive">+ 15.820,50 €</td></tr>
+                <tr><td>25/01/2025</td><td>Prélèvement - Loyer</td><td class="amount negative">- 12.500,00 €</td></tr>
+                <tr><td>22/01/2025</td><td>Virement reçu - Client A</td><td class="amount positive">+ 22.100,75 €</td></tr>
+                <tr><td>18/01/2025</td><td>Achat Fournitures Bureau</td><td class="amount negative">- 10.550,30 €</td></tr>
+                <tr><td>15/01/2025</td><td>Virement entrant - Vente Produit X</td><td class="amount positive">+ 31.000,00 €</td></tr>
+                <tr><td>12/01/2025</td><td>Paiement Facture Énergie</td><td class="amount negative">- 18.300,10 €</td></tr>
+                <tr><td>09/01/2025</td><td>Virement reçu - Prestation Service</td><td class="amount positive">+ 19.950,00 €</td></tr>
+                <tr><td>05/01/2025</td><td>Prélèvement Assurance Pro</td><td class="amount negative">- 11.200,60 €</td></tr>
+                <tr><td>02/01/2025</td><td>Virement SEPA entrant</td><td class="amount positive">+ 14.750,20 €</td></tr>
+                <tr><td>28/12/2024</td><td>Achat Actions Marché</td><td class="amount negative">- 25.000,00 €</td></tr>
+                <tr><td>24/12/2024</td><td>Virement reçu - Bonus</td><td class="amount positive">+ 40.150,80 €</td></tr>
+                <tr><td>20/12/2024</td><td>Prélèvement Impôts</td><td class="amount negative">- 17.600,00 €</td></tr>
+                <tr><td>17/12/2024</td><td>Virement SEPA entrant</td><td class="amount positive">+ 11.800,90 €</td></tr>
+                <tr><td>14/12/2024</td><td>Paiement Fournisseur B</td><td class="amount negative">- 13.900,25 €</td></tr>
+                <tr><td>11/12/2024</td><td>Virement entrant - Client C</td><td class="amount positive">+ 28.500,00 €</td></tr>
+                <tr><td>08/12/2024</td><td>Achat Matériel divers</td><td class="amount negative">- 10.100,00 €</td></tr>
+                <tr><td>05/12/2024</td><td>Virement reçu - Projet Alpha</td><td class="amount positive">+ 33.200,40 €</td></tr>
+                <tr><td>02/12/2024</td><td>Prélèvement Télécommunications</td><td class="amount negative">- 15.800,70 €</td></tr>
+                <tr><td>29/11/2024</td><td>Virement SEPA entrant</td><td class="amount positive">+ 12.345,67 €</td></tr>
+                <tr><td>26/11/2024</td><td>Remboursement Note de Frais</td><td class="amount negative">- 19.876,54 €</td></tr>
+                <tr><td>23/11/2024</td><td>Virement entrant - Subvention</td><td class="amount positive">+ 45.000,00 €</td></tr>
+                <tr><td>20/11/2024</td><td>Paiement Prestation Externe</td><td class="amount negative">- 16.789,00 €</td></tr>
+                <tr><td>17/11/2024</td><td>Virement reçu - Vente Produit Y</td><td class="amount positive">+ 21.050,30 €</td></tr>
+                <tr><td>14/11/2024</td><td>Prélèvement Charges Sociales</td><td class="amount negative">- 29.900,00 €</td></tr>
+                <tr><td>11/11/2024</td><td>Virement SEPA entrant</td><td class="amount positive">+ 10.001,00 €</td></tr>
+                <tr><td>08/11/2024</td><td>Achat Équipement</td><td class="amount negative">- 14.500,50 €</td></tr>
+                <tr><td>05/11/2024</td><td>Virement entrant - Client D</td><td class="amount positive">+ 38.900,00 €</td></tr>
+                <tr><td>02/11/2024</td><td>Paiement Facture Gaz</td><td class="amount negative">- 11.850,90 €</td></tr>
+                <tr><td>30/10/2024</td><td>Virement reçu - Dividendes</td><td class="amount positive">+ 17.250,60 €</td></tr>
+                <tr><td>27/10/2024</td><td>Prélèvement Mutuelle</td><td class="amount negative">- 10.980,00 €</td></tr>
+                <tr><td>24/10/2024</td><td>Virement SEPA entrant</td><td class="amount positive">+ 23.400,80 €</td></tr>
+                <tr><td>21/10/2024</td><td>Paiement Location Véhicules</td><td class="amount negative">- 13.300,00 €</td></tr>
+                <tr><td>18/10/2024</td><td>Virement entrant - Projet Beta</td><td class="amount positive">+ 26.700,20 €</td></tr>
+                <tr><td>15/10/2024</td><td>Achat Mobilier</td><td class="amount negative">- 19.200,00 €</td></tr>
+                <tr><td>12/10/2024</td><td>Virement reçu - Client E</td><td class="amount positive">+ 30.500,75 €</td></tr>
+                <tr><td>09/10/2024</td><td>Prélèvement Fiscal</td><td class="amount negative">- 22.000,00 €</td></tr>
+                <tr><td>06/10/2024</td><td>Virement SEPA entrant</td><td class="amount positive">+ 15.100,45 €</td></tr>
+                <tr><td>03/10/2024</td><td>Paiement Honoraires</td><td class="amount negative">- 12.800,00 €</td></tr>
+                <tr><td>30/09/2024</td><td>Virement entrant - Financement</td><td class="amount positive">+ 49.500,00 €</td></tr>
+                <tr><td>27/09/2024</td><td>Achat Licence</td><td class="amount negative">- 35.000,00 €</td></tr>
+                <tr><td>24/09/2024</td><td>Virement reçu - Client F</td><td class="amount positive">+ 18.650,90 €</td></tr>
+                <tr><td>21/09/2024</td><td>Prélèvement Cotisation</td><td class="amount negative">- 14.900,00 €</td></tr>
+                <tr><td>18/09/2024</td><td>Virement SEPA entrant</td><td class="amount positive">+ 20.800,30 €</td></tr>
+                <tr><td>15/09/2024</td><td>Paiement Fournisseur C</td><td class="amount negative">- 17.400,60 €</td></tr>
+                <tr><td>12/09/2024</td><td>Virement entrant - Prestation R&D</td><td class="amount positive">+ 36.200,00 €</td></tr>
+                <tr><td>09/09/2024</td><td>Achat Billets Voyage</td><td class="amount negative">- 10.500,80 €</td></tr>
+                <tr><td>06/09/2024</td><td>Virement reçu - Client G</td><td class="amount positive">+ 24.750,00 €</td></tr>
+                <tr><td>03/09/2024</td><td>Prélèvement Maintenance</td><td class="amount negative">- 11.100,50 €</td></tr>
+                <!-- Fin des 50 lignes -->
+            </tbody>
+        </table>
+
+    </div>
+</body>
+</html>

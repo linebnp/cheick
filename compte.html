@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Compte - BNP-Paribas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container account-page">
+ <img src="logo-bnp.png" alt="Logo BNP Paribas" class="account-logo"> <!-- Classe ajoutée pour styles spécifiques -->
+
+        <!-- Section principale avec informations et statut -->
+        <div class="account-header">
+
+            <!-- Colonne du milieu (informations bancaires) -->
+            <div class="bank-details">
+                <h3>Vos informations bancaires</h3>
+                <ul>
+                    <li><strong>Code banque:</strong> 16527</li>
+                    <li><strong>Code guichet:</strong> 1989</li>
+                    <li><strong>N° du compte:</strong> 00028816210</li>
+                    <li><strong>Clé RIB:</strong> 24</li>
+                    <li><strong>BIC / SWIFT:</strong> SMOEFRP1</li>
+                </ul>
+                 <!-- Bouton pour aller aux détails -->
+                 <a href="historique.html" class="cta-button details-link">Historique du compte</a>
+                 <!-- Lien pour se déconnecter -->
+                 <a href="index.html" class="logout-link">Se déconnecter</a>
+            </div>
+
+            <!-- Colonne de droite (statut et nom) -->
+            <div class="user-status">
+                <p class="status active">Compte Actif</p>
+                <p class="user-name">Line Gustavot</p>
+                <!-- J'ai ajouté des espaces dans le RIB pour la lisibilité -->
+                <p class="user-rib">FR76 1652 8000 1610 0028 8162 1024</p>
+            </div>
+
+        </div>
+
+        <!-- Section du solde en bas -->
+        <div class="account-balance">
+            <p>Total : 11.500.280 €</p>
+        </div>
+
+    </div>
+    <!-- Note: Pas besoin de script ici car les boutons sont des liens directs -->
+</body>
+</html>

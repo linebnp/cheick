@@ -1,0 +1,315 @@
+/* Réinitialisation et styles généraux */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Police moderne */
+    background-color: #f4f4f4; /* Fond général gris clair */
+    color: #333;
+    line-height: 1.6;
+    display: flex; /* Utilisé pour centrer le contenu de login */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Assure que le body prend au moins toute la hauteur */
+}
+
+.page-container {
+    width: 100%;
+    max-width: 1200px; /* Limite la largeur sur grands écrans */
+    margin: 20px auto; /* Centre et ajoute marge */
+    background-color: #fff; /* Fond blanc pour le contenu principal */
+    padding: 30px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    border-radius: 8px;
+    text-align: center; /* Centre le texte par défaut */
+}
+
+/* --- Styles pour index.html (Page de Garde) --- */
+
+.main-header h1 {
+    color: #007942; /* Vert BNP */
+    margin-bottom: 5px;
+    font-size: 2.5em;
+}
+
+.main-header h2 {
+    color: #555;
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+.image-gallery {
+    display: flex;
+    justify-content: space-around; /* Espace entre les images */
+    align-items: center;
+    gap: 20px; /* Espace entre les images */
+    margin-bottom: 40px;
+    flex-wrap: wrap; /* Permet aux images de passer à la ligne sur petits écrans */
+}
+
+.image-gallery img {
+    width: 100%; /* Prend la largeur dispo */
+    max-width: 300px; /* Limite la taille max */
+    height: auto; /* Garde les proportions */
+    border-radius: 8px; /* Coins arrondis */
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Ombre légère */
+    object-fit: cover; /* S'assure que l'image couvre bien son espace */
+    max-height: 250px; /* Limite la hauteur */
+}
+
+.cta-section {
+    margin-top: 20px;
+}
+
+/* Style commun pour les boutons verts */
+.cta-button {
+    background-color: #007942; /* Vert BNP */
+    color: white;
+    padding: 15px 40px; /* Padding généreux */
+    border: none;
+    border-radius: 25px; /* Fortement arrondi */
+    font-size: 1.1em;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    text-transform: uppercase; /* Texte en majuscules */
+}
+
+.cta-button:hover {
+    background-color: #005a31; /* Vert plus foncé */
+    transform: translateY(-2px); /* Effet de soulèvement */
+}
+
+.cta-button:active {
+    transform: translateY(0);
+}
+
+
+/* --- Styles pour login.html (Page Connexion) --- */
+
+/* Centrage spécifique pour la page de login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+    padding: 20px;
+    background-color: #fff; /* Fond blanc pour la page login */
+}
+
+.login-form {
+    background-color: #f9f9f9; /* Fond très léger pour le formulaire */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px; /* Largeur max du formulaire */
+    text-align: left; /* Aligne labels et inputs à gauche */
+}
+
+.login-title {
+    color: #007942; /* Vert BNP */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+.login-form div {
+    margin-bottom: 20px; /* Espace entre les champs */
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #007942; /* Labels en vert */
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #007942; /* Bordure verte */
+    border-radius: 8px; /* Coins arrondis */
+    font-size: 1em;
+    color: #333; /* Texte tapé en noir */
+    background-color: #fff; /* Fond blanc */
+}
+
+.login-form input::placeholder { /* Style pour le texte indicatif */
+    color: #aaa;
+}
+
+/* Bouton spécifique pour la soumission du login */
+.login-submit-button {
+    width: 100%; /* Prend toute la largeur du formulaire */
+    margin-top: 10px; /* Espace au-dessus */
+    padding: 15px; /* Padding adapté */
+}
+
+#errorMessage {
+    color: #d9534f; /* Rouge pour l'erreur */
+    margin-top: 15px;
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+/* --- Styles pour compte.html (Page Compte) --- */
+
+.account-page {
+    text-align: left; /* On annule le text-align: center général si besoin */
+    padding: 40px; /* Plus d'espace intérieur pour cette page */
+}
+
+/* Conteneur pour les infos du haut (flexbox) */
+.account-header {
+    display: flex;
+    justify-content: space-between; /* Éléments aux extrémités */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    flex-wrap: wrap; /* Permet de passer à la ligne sur petits écrans */
+    gap: 30px; /* Espace si ça passe à la ligne */
+    margin-bottom: 50px; /* Espace avant le solde */
+    padding-bottom: 30px; /* Espace avant la bordure */
+    border-bottom: 1px solid #ddd; /* Ligne de séparation */
+}
+
+/* Colonne du milieu/gauche */
+.bank-details {
+    flex-basis: 60%; /* Prend plus de place */
+    min-width: 280px; /* Largeur minimum */
+}
+
+.bank-details h3 {
+    color: #007942; /* Vert BNP */
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.bank-details ul {
+    list-style: none; /* Pas de puces */
+    padding: 0;
+    margin-bottom: 30px; /* Espace avant les boutons */
+}
+
+.bank-details li {
+    margin-bottom: 10px;
+    font-size: 1em;
+    color: #444; /* Texte un peu plus foncé */
+}
+
+.bank-details li strong {
+    display: inline-block; /* Permet de définir une largeur */
+    width: 130px; /* Aligne les valeurs (ajuster si besoin) */
+    font-weight: 600; /* Moins gras que 'bold' */
+    color: #000;
+}
+
+/* Colonne de droite */
+.user-status {
+    flex-basis: 35%; /* Prend moins de place */
+    min-width: 250px;
+    text-align: right; /* Texte aligné à droite */
+}
+
+.user-status .status {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.user-status .status.active {
+    color: #198754; /* Vert succès (plus standard) */
+}
+
+.user-status .user-name {
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.user-status .user-rib {
+    font-size: 1em; /* Taille normale pour le RIB */
+    color: #555; /* Gris moyen */
+    word-wrap: break-word; /* Permet au long RIB de passer à la ligne */
+}
+
+/* Style pour le bouton "Détails du compte" */
+.details-link {
+    padding: 12px 30px; /* Padding un peu réduit */
+    font-size: 1em; /* Taille de police normale */
+    margin-right: 15px; /* Espace avec le lien de déconnexion */
+    display: inline-block; /* Nécessaire pour la marge */
+}
+
+/* Style simple pour le lien de déconnexion */
+.logout-link {
+    color: #dc3545; /* Rouge danger */
+    text-decoration: none;
+    font-size: 0.95em;
+    display: inline-block;
+    margin-top: 5px; /* Pour aligner un peu avec le bouton */
+    vertical-align: middle; /* Essayer d'aligner verticalement */
+}
+
+.logout-link:hover {
+    text-decoration: underline;
+    color: #a02530; /* Rouge plus foncé au survol */
+}
+
+
+/* Section du solde en bas */
+.account-balance {
+    background-color: #e9ecef; /* Gris très clair */
+    color: #212529; /* Texte presque noir */
+    padding: 25px 30px;
+    margin-top: 30px; /* Espace au-dessus */
+    border-radius: 8px;
+    text-align: right; /* Solde aligné à droite */
+}
+
+.account-balance p {
+    margin: 0;
+    font-size: 1.8em; /* Très grande taille pour le solde */
+    font-weight: bold;
+}
+
+/* --- Styles pour historique.html (Page Historique) --- */
+
+/* ... (Styles précédents pour history-page, history-header, back-link, history-table etc.) ... */
+
+/* Styles pour le bloc d'info compte DANS la page historique */
+.history-account-info {
+    /* Hérite de .account-header mais on peut surcharger/ajouter */
+    margin-bottom: 40px; /* Espace AVANT le tableau d'historique */
+    padding-bottom: 30px; /* Espace SOUS les infos */
+    border-bottom: 1px solid #e0e0e0; /* Ligne de séparation légère */
+}
+
+/* Ajustement potentiel si le titre prend trop de place sur petit écran */
+.history-header h1 {
+    font-size: 1.6em; /* Taille légèrement réduite si besoin */
+}
+
+/* --- Styles pour compte.html (Page Compte) --- */
+
+/* ... (Styles précédents pour account-page, account-header etc.) ... */
+
+/* Style pour le logo SUR la page compte */
+.account-logo {
+    display: block;         /* Pour pouvoir utiliser margin: auto */
+    max-height: 50px;       /* Ajuste la hauteur max du logo */
+    width: auto;           /* Garde les proportions */
+    margin: 0 auto 40px auto; /* Centre horizontalement et ajoute 40px d'espace en dessous */
+}
+/* ... (Reste de tes styles) ... */
+
+/* --- Styles pour compte.html et details.html (À venir si besoin) --- */
+/* Tu peux ajouter ici les styles pour les autres pages quand on y sera */

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BNP-Paribas - La banque du monde</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="page-container">
+        <header class="main-header">
+            <h1>BNP-Paribas</h1>
+            <h2>La banque du monde</h2>
+        </header>
+<img src="logo-bnp.png" alt="Logo BNP Paribas" class="login-logo">
+
+        <section class="image-gallery">
+            <img src="bureau.jpg" alt="Bureau avec documents">
+            <img src="homme-noir.jpg" alt="Homme en costume travaillant">
+            <img src="homme-blanc.jpg" alt="Homme en costume regardant">
+        </section>
+
+        <section class="cta-section">
+             <!-- Ce bouton redirige vers login.html -->
+            <button id="loginButton" class="cta-button">Connexion</button>
+        </section>
+    </div>
+
+    <script>
+        // Fait fonctionner le bouton "Connexion"
+        document.getElementById('loginButton').addEventListener('click', function() {
+            window.location.href = 'login.html';
+        });
+    </script>
+
+</body>
+</html>
